@@ -1,0 +1,121 @@
+/* General styling */
+body.bg-light {
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+body.bg-dark {
+  background-color: #212529;
+  color: #f8f9fa;
+}
+
+/* Profile Section */
+.profile-section {
+  display: flex;
+  align-items: center;
+}
+
+.profile-img {
+  width: 300px;
+  height: 400px;
+  border-radius: 50% / 35%;
+  border: 5px solid white;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.profile-details {
+  flex-grow: 1;
+}
+
+/* Section styling */
+section {
+  padding: 60px 0;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.btn {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.resume-section a.btn {
+  margin-top: 20px;
+}
+
+.contact-section .form-control {
+  background-color: white;
+  color: #212529;
+}
+
+.bg-dark .form-control {
+  background-color: #343a40;
+  color: white;
+}
+
+.contact-section {
+  margin-top: 30px;
+}
+
+/* Dark mode */
+.bg-dark h2, .bg-dark p, .bg-dark ul li {
+  color: #f8f9fa;
+}
+
+.bg-light h2, .bg-light p, .bg-light ul li {
+  color: #212529;
+}
+
+button, .btn {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Smooth hover effect */
+button:hover, .btn:hover {
+  background-color: #007bff;
+  color: white;
+}
+/* Container for social icons */
+.social-icons {
+  display: flex;              /* Use flexbox for alignment */
+  justify-content: center;    /* Center the icons horizontally */
+  margin-top: 20px;          /* Space above the icons */
+}
+
+/* Style for individual social icon links */
+.social-icons a {
+  margin: 0 15px;            /* Space between icons */
+  font-size: 30px;           /* Larger icon size */
+  color: #333;                /* Default icon color */
+  transition: color 0.3s, transform 0.3s; /* Smooth color and scale transition */
+}
+
+/* Hover effects for the icons */
+.social-icons a:hover {
+  color: #007bff;            /* Change color on hover */
+  transform: scale(1.1);     /* Slightly enlarge the icon on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .social-icons a {
+      font-size: 24px;       /* Slightly smaller icons on smaller screens */
+  }
+}
